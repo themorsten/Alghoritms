@@ -1,4 +1,4 @@
-'''
+
 void Buble_sort(int* A, const int size) {
 	int i = 0;
 	bool t = true;
@@ -12,5 +12,3 @@ void Buble_sort(int* A, const int size) {
 		}
 		i++;
 	}
-  
-'''
