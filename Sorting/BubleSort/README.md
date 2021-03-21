@@ -6,15 +6,15 @@
 
 Псевдокод:
 '''
-i=0
-t=True
-while t:
-  t=False
-  for i=0 to n-1-i:
-    if (A[i]>A[i+1]){
-      swap(A[i],A[i+1])
-      t=True
-   i++
+1. i=0
+2. t=True
+3. while t:
+4.   t=False
+5.  for i=0 to n-1-i:
+6.    if (A[i]>A[i+1]){
+7.      swap(A[i],A[i+1])
+8.     t=True
+9.   i++
 '''
   
 Оценка:
