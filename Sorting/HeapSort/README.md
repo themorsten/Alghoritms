@@ -8,4 +8,4 @@
 Итоговое время - O(n*log n), но сортируем на месте в отличие от MergeSort
 
 Heapify - https://github.com/themorsten/DataStructures/tree/main/Heapify
-MergeSort - https://github.com/themorsten/Alghoritms/tree/main/MergeSort
+MergeSort - https://github.com/themorsten/Alghoritms/tree/main/Sorting/MergeSort
