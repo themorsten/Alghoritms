@@ -1,10 +1,10 @@
-def Merge(A,B):
+def Merge(A,B): # Получает 2 Отсортированных массива, возвращает 1 отсортированный массив
   res = []
   i,j = 0,0
-  Al = len(A)
-  Bl = len(B)
+  id1 = len(A)
+  id2 = len(B)
 
-  while(i < Al and j <Bl):
+  while(i < id1 and j <id2):
     if A[i]<B[j]:
       res.append(A[i])
       i+=1
@@ -12,11 +12,11 @@ def Merge(A,B):
       res.append(B[j])
       j+=1
   
-  while i<Al:
+  while i<id1:
     res.append(A[i])
     i+=1
 
-  while j <Bl:
+  while j <id2:
     res.append(B[j])
     j+=1
 
@@ -24,12 +24,12 @@ def Merge(A,B):
 
 
 def MergeSort(A):
-  if len(A) <= 1:
+  if len(A) <= 1:            # массив из 1 элемента
     return A
-  mid = len(A)//2
-  left = MergeSort(A[:mid])
-  right = MergeSort(A[mid:])
-  return Merge(left,right)
+  mid = len(A)//2            # выделяем середину массива
+  left = MergeSort(A[:mid])  # сортируем левую часть [0 ; mid)
+  right = MergeSort(A[mid:]) # сортируем правую часть [mid ; конец)
+  return Merge(left,right)   # обединяем два отсортированный массива left и right
 
 
 
@@ -39,5 +39,5 @@ def MergeSort(A):
 
 
 A = [1,3,2,5,7,5,5,8,9,0]
-MergeSort(A)
-print(A)
+B = MergeSort(A)
+print(B)
