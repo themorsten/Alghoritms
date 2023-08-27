@@ -1,4 +1,4 @@
-def QuickSort(A,l,r):             
+def QuickSort(A,l,r):             # передаем массив A[l ; r] включительно     
   if l>=r: return                 # если элементов 1 или меньше, выходим
 
   i,j = l,r
